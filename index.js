@@ -47,10 +47,8 @@ function sortOne(event) {
     return;
   } else if (shiftNum % 2 === 0) {
     evens.push(shiftNum);
-    console.log(evens);
   } else {
     odds.push(shiftNum);
-    console.log(odds);
   }
   render();
 }
@@ -71,9 +69,7 @@ function sortAll(event) {
       odds.push(num);
     }
   });
+
   numArr = [];
-  //delete log lines
-  console.log(evens);
-  console.log(odds);
   render();
 }
